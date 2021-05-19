@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>"
+    
+    </head>
+    <body>
+        <div id="app">
+            <button v-on:click="isHidden = true">Hide the text below</button>
+            <button v-on:click="isHidden = !isHidden">Toggle hide and show</button>
+            
+            <h1 v-if="!isHidden">Hide me on click event!</h1>
+          </div>
+    <script>
+            var app = new Vue({
+  el: '#app',
+  data: {
+    isHidden: false
+  }
+})
+
+
+    </script>
+
+    </body>
+</html>

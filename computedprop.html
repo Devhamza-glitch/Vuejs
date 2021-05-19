@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://unpkg.com/vue"></script>
+        <script src="<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>"
+    </head>
+    <body>
+        <div id="demo">{{ fullName }}</div>
+        <script>
+                    var vm= new vue({
+                        el:'#demo',
+                        data: {
+                            firstName: 'mark',
+                            lastName: 'alen'
+                        },
+                        computed: {
+                            fullName :function(){
+
+                                    return this.firstName+ ''+ this.lastName
+
+                            }
+
+                        }
+
+
+                    })
+
+
+
+        </script>
+
+
+
+
+        </body>
+</html>

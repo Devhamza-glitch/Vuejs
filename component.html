@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="https://unpkg.com/vue"></script>
+        <script src="<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>"
+    </head>
+    <body>
+        <div id="app-7">
+            <ol>
+
+              <todo-item
+                v-for="item in vehicleList"
+                v-bind:todo="item"
+                v-bind:key="item.id"
+              ></todo-item>
+            </ol>
+          </div>
+        <script>
+        Vue.component('todo-item', {
+                        props: ['todo'],
+                        template: '<li>{{ todo.text }}</li>'
+                            })
+
+            var app7 = new Vue({
+                    el: '#app-7',   
+                      data: {
+                         vehicleList: [
+                        { id: 0, text: 'cars' },
+                        { id: 1, text: 'truck' },
+                        { id: 2, text: 'bike' }
+                        ]
+                    }
+})
+        </script>
+
+
+
+
+</body>
+</html>

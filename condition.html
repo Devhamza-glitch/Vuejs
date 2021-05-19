@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>playing with conditions</title>
+        <script src="https://unpkg.com/vue"></script>
+      </head>
+<body>
+
+    <div id="app-3">
+        <span v-if="seen">Now you see me</span>
+      </div>
+<script>
+var app=new Vue({
+
+el:'#app-3',
+data: {
+     seen=true
+},
+
+})
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <span v-bind:title="message">
+         <h1>Hover your mouse over </h1> 
+         <input v-model="msg"> 
+         <p>{{msg}}</p> 
+        </span>
+      </div>
+<script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'You loaded this page on ' + new Date().toLocaleString(),
+          msg:'hi there '
+        }
+      })
+    
+  </script>
+</body>
+</html
