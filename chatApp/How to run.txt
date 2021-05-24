@@ -1,0 +1,4 @@
+run in cmd
+npm install
+then run
+node index.js //this will start the server
